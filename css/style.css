@@ -16,8 +16,8 @@ body {
   background-image: url(../img/banner-img.jpg);
   background-position: center;
   background-size: cover;
+  min-height: 100vh;
 }
-
 .container {
   display: flex;
   position: relative;
