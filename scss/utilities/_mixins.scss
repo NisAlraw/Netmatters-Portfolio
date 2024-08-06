@@ -1,0 +1,35 @@
+@mixin mq($break) {
+    @if $break == "xs" {
+        @media (min-width: $break__xs) and (max-width: $break__s) {
+            @content;
+        }
+    }
+
+    @else if $break == "s" {
+        @media (min-width: $break__s) and (max-width: $break__m) {
+            @content;
+        }
+    }
+
+    @else if $break == "m" {
+        @media (min-width: $break__m) {
+            @content;
+        }
+    }
+
+    @else if $break == "l" {
+        @media (min-width: $break__l) {
+            @content;
+        }
+    }
+
+    @else if $break == "xl" {
+        @media (min-width: $break__xl) {
+            @content;
+        }
+    }
+    
+    @else {
+        @error "#{$breakpoint} is not a valid media query size!;"
+    }
+}

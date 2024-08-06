@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Comfortaa", sans-serif;
+}
+
+body {
+  background-color: #242b2b;
+}
+
+#banner {
+  background-image: url(../img/banner-img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+.container .menu {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #323939;
+  padding: 30px 0;
+}
+.container .menu h1 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+  font-size: 4rem;
+}
+.container .menu ul li {
+  padding: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(225, 225, 225, 0.05);
+}
+.container .menu ul li a {
+  color: #bdb8b7;
+  display: block;
+}
+.container .menu .social-media {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.container .menu .social-media a {
+  display: block;
+  width: 40px;
+  background: #383b3b;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8b7;
+  border-radius: 5px 5px 0 0;
+}
+.container .content {
+  width: 100%;
+  margin-left: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
