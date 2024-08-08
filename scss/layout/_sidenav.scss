@@ -1,57 +1,61 @@
 .container {
-    display: flex;
-    position: relative;
+    display: none;
+    
+    @include mq ("m") {
+        display: flex;
+        position: relative;
 
-    .menu {
-        position: fixed;
-        width: 200px;
-        height: 100%;
-        background: #323939;        
-        padding: 30px 0;
+        .menu {
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            background: #323939;        
+            padding: 30px 0;
 
-        h1 {
-            color: #fff;
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 30px;
-            letter-spacing: 5px;
-            font-size: 4rem;
-        }
-
-        ul li {
-            padding: 35px;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            border-top: 1px solid rgba(225,225,225,0.05);
-
-            a {
-                color: #bdb8b7;
-                display: block;
-            }
-        }
-
-        .social-media {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-
-            a {
-                display: block;
-                width: 40px;
-                background: #383b3b;
-                height: 40px;
-                line-height: 40px;
+            h1 {
+                color: #fff;
+                text-transform: uppercase;
                 text-align: center;
-                margin: 0 5px; 
-                color: #bdb8b7;
-                border-radius: 5px 5px 0 0;
+                margin-bottom: 30px;
+                letter-spacing: 5px;
+                font-size: 4rem;
+            }
+
+            ul li {
+                padding: 35px;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+                border-top: 1px solid rgba(225,225,225,0.05);
+
+                a {
+                    color: #bdb8b7;
+                    display: block;
+                }
+            }
+
+            .social-media {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+
+                a {
+                    display: block;
+                    width: 40px;
+                    background: #383b3b;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    margin: 0 5px; 
+                    color: #bdb8b7;
+                    border-radius: 5px 5px 0 0;
+                }
+            }
+
+            .content {
+                width: 100%;
+                margin-left: 200px;
             }
         }
-    }
-
-    .content {
-        width: 100%;
-        margin-left: 200px;
     }
 }
