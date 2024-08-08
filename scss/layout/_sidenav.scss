@@ -1,7 +1,7 @@
 .container {
     display: none;
     
-    @include mq ("m") {
+    @media (min-width: 768px) {
         display: flex;
         position: relative;
 
